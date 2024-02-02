@@ -23,7 +23,7 @@ jobs:
               password: ${{ secrets.DOCKERHUB_TOKEN }}
     
         - name: Build image
-          run: docker image build -t lukasprogress/cicd-demo .
+          run: docker image build -t raupechr/cicd-demo .
     
         - name: Push image
-          run: docker push lukasprogress/cicd-demo:latest
+          run: docker push raupechr/cicd-demo:latest
