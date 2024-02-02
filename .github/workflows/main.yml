@@ -15,6 +15,7 @@ jobs:
         - name: Build and Test
           run: |
             npm install
+            npm install -g npm@10.4.0
             npm test
     publish:
       runs-on: ubuntu-latest
