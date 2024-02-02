@@ -29,8 +29,8 @@ jobs:
                     password: ${{ secrets.DOCKERHUB_TOKEN }}
           
         - name: Build image
-          run: docker image build -t eppjonathan/greeting-app .
+          run: docker image build -t raupechr/greeting-app .
           
         - name: Push image
-          run: docker push eppjonathan/greeting-app:latest
+          run: docker push raupechr/greeting-app:latest
           
